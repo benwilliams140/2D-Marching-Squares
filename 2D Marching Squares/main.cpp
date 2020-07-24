@@ -1,6 +1,7 @@
-#include <SFML/Graphics.hpp>
+#include "Application.h"
 
 int main()
 {
-	sf::RenderWindow window(sf::VideoMode(1024, 768), "Window", sf::Style::Default);
+	Application app;
+	app.start();
 }
