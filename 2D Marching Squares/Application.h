@@ -3,11 +3,10 @@
 
 #include "GUI.h"
 #include "Window.h"
+#include "Board.h"
 
-const unsigned int GUI_WIDTH = 200;
-const unsigned int WINDOW_WIDTH = GUI_WIDTH + 700;
-const unsigned int WINDOW_HEIGHT = 500;
 const std::string WINDOW_TITLE = "2D Marching Squares";
+const unsigned int GUI_WIDTH = 200;
 
 class Application
 {
@@ -25,8 +24,10 @@ private:
 
 	void initGUI();
 
-	Window* window;
-	GUI* gui;
+	Window* window = NULL;
+	GUI* gui = NULL;
+
+	Board* board = NULL;
 };
 
 #endif

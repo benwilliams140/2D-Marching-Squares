@@ -4,8 +4,13 @@ Application::Application()
 {
 	srand(time(NULL));
 
-	window = new Window(WINDOW_TITLE, WINDOW_WIDTH, WINDOW_HEIGHT);
-	gui = new GUI(window, GUI_WIDTH, WINDOW_HEIGHT);
+	board = new Board();
+
+	int _windowWidth = board->getRenderWidth() + GUI_WIDTH;
+	int _windowHeight = board->getRenderHeight();
+
+	window = new Window(WINDOW_TITLE, _windowWidth, _windowHeight);
+	gui = new GUI(window, GUI_WIDTH, _windowHeight);
 
 	initGUI();
 }
@@ -53,6 +58,7 @@ void Application::render()
 {
 	window->clear();
 
+	board->render(window);
 	gui->render();
 
 	window->display();
