@@ -148,6 +148,7 @@
     <ClCompile Include="Board.cpp" />
     <ClCompile Include="GUI.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Square.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -155,6 +156,7 @@
     <ClInclude Include="Array2D.h" />
     <ClInclude Include="Board.h" />
     <ClInclude Include="GUI.h" />
+    <ClInclude Include="Square.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

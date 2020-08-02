@@ -8,6 +8,7 @@
 
 #include "Array2D.h"
 #include "Window.h"
+#include "Square.h"
 
 const unsigned int WIDTH = 10;
 const unsigned int HEIGHT = 10;
@@ -26,7 +27,7 @@ public:
 
 private:
 	int rectMultiple = 2;
-	//Array2D<sf::RectangleShape&> squares = Array2D<sf::RectangleShape&>(WIDTH, HEIGHT);
+	Array2D<Square*> squares = Array2D<Square*>(WIDTH, HEIGHT);
 };
 
 #endif

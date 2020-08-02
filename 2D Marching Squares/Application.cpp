@@ -56,7 +56,7 @@ void Application::update(float _deltaTime)
 
 void Application::render()
 {
-	window->clear();
+	window->clear(sf::Color(192, 192, 192));
 
 	board->render(window);
 	gui->render();
